@@ -5,7 +5,7 @@ export default function Stats() {
   const [statInfo, setStatInfo] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/stat-info")
+    fetch("https://battlefield4-backend-7blnib22r-vinay-kumars-projects-c35f172e.vercel.app/api/stat-info")
       .then((response) => response.json())
       .then((data) => setStatInfo(data.data)); // Assuming `data` contains the "data" array
   }, []);
