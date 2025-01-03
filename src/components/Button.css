@@ -1,0 +1,26 @@
+.container1 {
+    width: 300px;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+} 
+.option{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.option:hover{
+    background-color: white;
+    color: black;
+}
+
+.option:hover span{
+    color: black;
+}
+span{
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.65px;
+    color: white;
+}
