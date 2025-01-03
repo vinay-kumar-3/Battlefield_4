@@ -6,7 +6,7 @@ export default function ServerInfo() {
   const [serverInfo, setServerInfo] = useState({ settings: [], advanced: [], rules: [] });
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/server-info")
+    fetch("https://battlefield4-backend-7blnib22r-vinay-kumars-projects-c35f172e.vercel.app/api/server-info")
       .then((response) => response.json())
       .then((data) => setServerInfo(data));
   }, []);
